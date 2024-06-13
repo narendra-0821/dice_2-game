@@ -7,13 +7,11 @@ A simple, interactive game of Pig built using HTML, CSS, and JavaScript.
 
 - [Description](#description)
 - [Rules](#rules)
-- [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Description
@@ -43,12 +41,8 @@ Pig is a multiplayer dice game where the objective is to be the first player to 
 - CSS
 - JavaScript
 
-## Installation
-
-1. Clone the repository:
-    ```bash
- https://narendra-0821.github.io/dice_2-game/
-    ```
+##Demo
+link: https://narendra-0821.github.io/dice_2-game/
 
     
 
