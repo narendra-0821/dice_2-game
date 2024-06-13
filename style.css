@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+.hidden{
+  display:none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +26,7 @@ body {
 
 /* LAYOUT */
 main {
-  position: relative;
+  position:relative;
   width: 100rem;
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
@@ -113,22 +115,13 @@ main {
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
-
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
-
-.btn::first-letter {
-  font-size: 2.4rem;
-  display: inline-block;
-  margin-right: 0.7rem;
-}
-
 .btn--new {
   top: 4rem;
 }
@@ -160,56 +153,51 @@ main {
 .player--winner {
   background-color: #2f2f2f;
 }
-
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
 }
-.hidden {
-  display: none;
-}
-
-@media (max-width: 400px) {
-  main {
+@media (max-width:400px) {
+  main 
+  {
     transform: rotate(90deg);
     flex-direction: row;
     position: absolute;
-    height: 400px;
+    height:400px;
     width: 600px;
   }
-  .btn--new,
-  .btn--new:active {
-    transform: translateY(100%);
+  .btn--new,.btn--new:active{
+    transform:translateY(100%);
     left: 35%;
     transition: all 0.2s;
   }
-  .btn--roll,
-  .btn--roll:active {
+  .btn--roll,.btn--roll:active{
     top: 30rem;
     transform: translateX(-45%);
     transition: all 0.2s;
   }
-  .btn--hold,
-  .btn--hold:active {
+  .btn--hold,.btn--hold:active{
     transform: translateX(-50%);
     top: 24rem;
-    width: 110px;
+    width:110px;
     height: 40px;
     font-size: small;
     transition: all 0.2s;
-  }
-  .player {
+  } 
+  .player 
+  {
     padding: 3rem;
   }
-  .name {
-    font-size: x-large;
+  .name{
+    font-size:x-large;
   }
-  .score {
+  .score{
     margin-bottom: 10px;
     font-size: 60px;
   }
-  .current {
-    margin-top: 0px;
+  .current{
+     margin-top:0px;
+     
   }
   .dice {
     position: absolute;
@@ -220,3 +208,4 @@ main {
     margin: 2rem auto;
   }
 }
+
